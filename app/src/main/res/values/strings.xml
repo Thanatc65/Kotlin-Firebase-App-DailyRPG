@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">finalproject001</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="yes" translatable="false">Yes</string>
+    <string name="no" translatable="false">No</string>
+    <string name="confirm" translatable="false">Are you sure to finish ?</string>
+    <string name="blank_space" translatable="false"> </string>
+    <string name="congratulations" translatable="false">Congrat You LEVEL UP</string>
+    <string name="changtheme" translatable="false">Change</string>
+    <string name="appname" translatable="false">Daily RPG</string>
+
+</resources>

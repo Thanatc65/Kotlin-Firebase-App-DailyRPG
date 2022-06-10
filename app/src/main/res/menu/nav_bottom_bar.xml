@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="HardcodedText">
+
+    <item
+        android:id="@+id/todayFragment"
+        android:icon="@drawable/ic_action_today"
+        android:title="Task" />
+
+<!--    <item-->
+<!--        android:id="@+id/tomorrowFragment"-->
+<!--        android:icon="@drawable/ic_action_tomorrow"-->
+<!--        android:title="Tomorrow" />-->
+
+<!--    <item-->
+<!--        android:id="@+id/foreverFragment"-->
+<!--        android:icon="@drawable/ic_action_forever"-->
+<!--        android:title="Forever" />-->
+
+
+</menu>

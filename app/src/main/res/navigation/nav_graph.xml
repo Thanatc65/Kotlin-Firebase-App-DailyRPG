@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_grap"
+    app:startDestination="@id/todayFragment">
+
+    <fragment
+        android:id="@+id/todayFragment"
+        android:name="com.rpgtasks.tasks.today.TodayFragment"
+        android:label="Daily RPG"
+        tools:layout="@layout/fragment_today">
+        <argument
+            android:name="fragmentId"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_todayFragment_to_createTodo"
+            app:destination="@id/createTodo" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/tomorrowFragment"
+        android:name="com.rpgtasks.tasks.tomorrow.TomorrowFragment"
+        tools:layout="@layout/fragment_tomorrow" />
+
+    <fragment
+        android:id="@+id/foreverFragment"
+        android:name="com.rpgtasks.tasks.forever.ForeverFragment"
+        tools:layout="@layout/fragment_forever" />
+
+    <activity
+        android:id="@+id/createTodo"
+        android:name="com.rpgtasks.CreateTodoActivity"
+        tools:layout="@layout/activity_create_todo" />
+
+    <fragment
+        android:id="@+id/showFinishFragment"
+        android:name="com.rpgtasks.showfinish.ShowFinishFragment"
+        tools:layout="@layout/fragment_showfinish" />
+    <fragment
+        android:id="@+id/statusFragment"
+        android:name="com.rpgtasks.status.StatusFragment"
+        tools:layout="@layout/fragment_status" />
+    <activity
+        android:id="@+id/dungeonActivity"
+        android:name="com.rpgtasks.dungeon.DungeonActivity"
+        tools:layout="@layout/activity_dungeon" />
+    <activity
+        android:id="@+id/settingActivity"
+        android:name="com.rpgtasks.SettingActivity"
+        tools:layout="@layout/activity_setting" />
+    <activity
+        android:id="@+id/characterActivity"
+        android:name="com.rpgtasks.character.CharacterActivity"
+        tools:layout="@layout/activity_character" />
+    <activity
+        android:id="@+id/inventoryActivity"
+        android:name="com.rpgtasks.character.InventoryActivity"
+        tools:layout="@layout/activity_inventory" />
+    <activity
+        android:id="@+id/logoutActivity"
+        android:name="com.rpgtasks.login.LogoutActivity"
+        android:label="activity_logout"
+        tools:layout="@layout/activity_logout" />
+
+</navigation>

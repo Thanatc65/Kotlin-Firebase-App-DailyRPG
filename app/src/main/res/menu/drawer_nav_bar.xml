@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!--Each item id should be same as in the nav_graph fragment id-->
+
+    <item
+        android:id="@+id/todayFragment"
+        android:icon="@drawable/ic_action_home"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/showFinishFragment"
+        android:icon="@drawable/ic_action_finishenevt"
+        android:title="Already Finish" />
+
+    <item
+        android:id="@+id/dungeonActivity"
+        android:icon="@drawable/ic_action_dung"
+        android:title="Dungeon" />
+
+
+
+    <item android:title="Character">
+        <menu>
+            <item
+                android:id="@+id/statusFragment"
+                android:icon="@drawable/ic_action_stat"
+                android:title="Status" />
+
+            <item
+                android:id="@+id/characterActivity"
+                android:icon="@drawable/ic_action_charac"
+                android:title="Character" />
+
+            <item
+                android:id="@+id/inventoryActivity"
+                android:icon="@drawable/ic_action_inven"
+                android:title="Inventory" />
+
+        </menu>
+
+    </item>
+
+    <item android:title="Option">
+
+    <menu>
+
+        <item
+            android:id="@+id/settingActivity"
+            android:icon="@drawable/ic_action_sett"
+            android:title="Setting" />
+
+    </menu>
+
+    </item>
+
+    <item
+        android:id="@+id/logoutActivity"
+        android:icon="@drawable/ic_action_logout"
+        android:title="Log out" />
+
+</menu>

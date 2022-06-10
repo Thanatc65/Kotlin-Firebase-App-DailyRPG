@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".status.StatusFragment">
+
+    <Button
+        android:id="@+id/addWIS"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="24dp"
+        android:text="+"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#001E6C"
+        app:layout_constraintEnd_toStartOf="@+id/guideline11"
+        app:layout_constraintTop_toBottomOf="@+id/addLUK" />
+
+    <ProgressBar
+        android:id="@+id/progressBarLuk"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="328dp"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="1"
+        android:scaleY="3"
+        app:layout_constraintEnd_toStartOf="@+id/addLUK"
+        app:layout_constraintStart_toStartOf="@+id/guideline10"
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+    <ProgressBar
+        android:id="@+id/progressBarAgi"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="328dp"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="1"
+        android:scaleY="3"
+        app:layout_constraintEnd_toStartOf="@+id/addAGI"
+        app:layout_constraintStart_toStartOf="@+id/guideline10"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <ProgressBar
+        android:id="@+id/progressBarInt"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="328dp"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="1"
+        android:scaleY="3"
+        app:layout_constraintEnd_toStartOf="@+id/addINT"
+        app:layout_constraintStart_toStartOf="@+id/guideline10"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <ProgressBar
+        android:id="@+id/progressBarWis"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="328dp"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="1"
+        android:scaleY="3"
+        app:layout_constraintEnd_toStartOf="@+id/addWIS"
+        app:layout_constraintStart_toStartOf="@+id/guideline10"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <ProgressBar
+        android:id="@+id/progressBarStr"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="1"
+        android:scaleY="3"
+        app:layout_constraintEnd_toStartOf="@+id/addSTR"
+        app:layout_constraintStart_toStartOf="@+id/guideline10"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/statusWIS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:text="1"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/progressBarWis"
+        app:layout_constraintEnd_toStartOf="@+id/textView14" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:text="/ 100"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/progressBarWis"
+        app:layout_constraintEnd_toStartOf="@+id/addWIS" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="WIS"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/guideline10"
+        app:layout_constraintTop_toBottomOf="@+id/progressBarLuk" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:text="/ 100"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/progressBarLuk"
+        app:layout_constraintEnd_toStartOf="@+id/addLUK" />
+
+    <TextView
+        android:id="@+id/statusLUK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:text="1"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/progressBarLuk"
+        app:layout_constraintEnd_toStartOf="@+id/textView19" />
+
+    <Button
+        android:id="@+id/addLUK"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="24dp"
+        android:text="+"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#001E6C"
+        app:layout_constraintEnd_toStartOf="@+id/guideline11"
+        app:layout_constraintTop_toBottomOf="@+id/addAGI" />
+
+    <TextView
+        android:id="@+id/statusAGI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:text="1"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/progressBarAgi"
+        app:layout_constraintEnd_toStartOf="@+id/textView16" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:text="/ 100"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/progressBarAgi"
+        app:layout_constraintEnd_toEndOf="@+id/progressBarAgi" />
+
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="AGI"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/guideline10"
+        app:layout_constraintTop_toBottomOf="@+id/progressBarInt" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="LUK"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/guideline10"
+        app:layout_constraintTop_toBottomOf="@+id/progressBarAgi" />
+
+    <TextView
+        android:id="@+id/statusINT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:text="1"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/progressBarInt"
+        app:layout_constraintEnd_toStartOf="@+id/textView13" />
+
+    <Button
+        android:id="@+id/addINT"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="24dp"
+        android:text="+"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#001E6C"
+        app:layout_constraintEnd_toStartOf="@+id/guideline11"
+        app:layout_constraintTop_toBottomOf="@+id/addSTR" />
+
+    <Button
+        android:id="@+id/addAGI"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="24dp"
+        android:text="+"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#001E6C"
+        app:layout_constraintEnd_toStartOf="@+id/guideline11"
+        app:layout_constraintTop_toBottomOf="@+id/addINT" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="INT"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/guideline10"
+        app:layout_constraintTop_toBottomOf="@+id/progressBarStr" />
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:text="C Point :"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline8"
+        app:layout_constraintEnd_toStartOf="@+id/characterPoint"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/characterPoint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="60dp"
+        android:text="0"
+        app:layout_constraintBottom_toTopOf="@+id/guideline8"
+        app:layout_constraintEnd_toStartOf="@+id/guideline11"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="51dp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="STR"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/guideline10"
+        app:layout_constraintTop_toTopOf="@+id/guideline8" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="20dp" />
+
+    <TextView
+        android:id="@+id/statusSTR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:text="1"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/progressBarStr"
+        app:layout_constraintEnd_toStartOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/addSTR"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="13dp"
+        android:text="+"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#001E6C"
+        app:layout_constraintEnd_toStartOf="@+id/guideline11"
+        app:layout_constraintTop_toTopOf="@+id/guideline8" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:text="/ 100"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/progressBarStr"
+        app:layout_constraintEnd_toEndOf="@+id/progressBarStr" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:text="/ 100"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/progressBarInt"
+        app:layout_constraintEnd_toEndOf="@+id/progressBarInt" />
+
+    <Button
+        android:id="@+id/statusChartButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#001E6C"
+        android:text="Status Chart"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline11"
+        app:layout_constraintStart_toStartOf="@+id/guideline10"
+        app:layout_constraintTop_toBottomOf="@+id/progressBarWis" />
+
+    <ImageView
+        android:id="@+id/adCpoint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/ic_action_plus"
+        app:layout_constraintEnd_toStartOf="@+id/guideline11"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="#001E6C" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

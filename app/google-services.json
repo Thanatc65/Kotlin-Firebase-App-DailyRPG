@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "333091246313",
+    "project_id": "my-project-5e448",
+    "storage_bucket": "my-project-5e448.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:333091246313:android:91abb95065ea611b1c2078",
+        "android_client_info": {
+          "package_name": "com.rpgtasks"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "333091246313-4b9rdlci3r2n1qo9dt0tbjs8o3e1f6ko.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJiqbQSJnyZO4v8clKDHA1Mk35r_viBNg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "333091246313-4b9rdlci3r2n1qo9dt0tbjs8o3e1f6ko.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
